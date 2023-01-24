@@ -1,0 +1,119 @@
+body {
+    background-color: whitesmoke;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    width: 100vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background-color: #111111;
+    z-index: 10;
+
+
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 20px;
+    background-color: #111111;
+    margin: 0;
+}
+
+
+@media (min-width:680px) {
+    .burgerMenu {
+        display: none;
+    }
+
+    .desktopMenu {
+        margin: 0;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .desktopMenu ul {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .desktopMenu ul li {
+        display: inline-block;
+    
+    }
+    
+    .desktopMenu li a {
+        margin: 0;
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 15px ;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: whitesmoke;
+        transition: 0.2s;
+    
+    }
+    
+    nav li a:hover {
+        background-color: orangered;
+
+    }
+}
+
+@media (max-width:680px) {
+    
+    header h1 {
+        font-size: 32px;
+    }
+
+    .desktopMenu {
+        display: none;
+    } 
+
+    .burgerMenu img {
+        margin: 0;
+        padding: 0;
+        width: 10%;
+    }
+}
+
+@media (max-width:800px) {
+    header {
+        display: none;
+    }
+    
+    .burgerMenu {
+        width: 100vw;
+        height: 45px;
+        background-color: #111111;
+    }
+}
+
+
+    footer {
+        background-color: #111111;
+        width: 100vw;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    footer h3 {
+        color: whitesmoke;
+        text-align: end;
+        margin-right: 10px;
+    }
+
+@media screen {
+    footer {
+        display: none;
+    }
+}

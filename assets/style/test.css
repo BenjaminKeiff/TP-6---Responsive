@@ -14,6 +14,7 @@ header {
     padding: 0;
     color: whitesmoke;
     background-color: #111111;
+    z-index: 10;
 
 
 }
@@ -27,6 +28,9 @@ header h1 {
 
 @media (min-width:680px) {
     img {
+        display: none;
+    }
+    input {
         display: none;
     }
 
@@ -71,8 +75,88 @@ header h1 {
 }
 
 @media (max-width:680px) {
-    nav {
+
+    #DesktopMenu {
         display: none;
+    } 
+
+    nav img {
+        margin: 0;
+        width: 5%;
+        display: flex;
+        position: relative;
+        left: 10px;
+    }
+}
+    #burger {
+        position: absolute;
+        top: 115px;
+        left: -120px;
+        margin: 0;
+        padding: 0;
+        width: 120px;
+        height: 150px;
+        background-color: #111111;
+    }
+    
+    #burger ul {
+        padding: 5px;
+        text-decoration: none;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #burger ul li
+    {
+        margin-top: 10px;
+    }
+
+    #burger ul li a{
+        margin: 5px;
+        background-color: chartreuse;
+        text-decoration: none;
+    }
+    nav img:hover ~ #burger ul {
+        position: absolute;
+        top: 115px;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        width: 120px;
+        height: 150px;
+        background-color: #111111;
+    }
+
+    /* nav {
+        position: absolute;
+        top: 85px;
+        left: -120px;
+        margin: 0;
+        padding: 0;
+        width: 120px;
+        background-color: #111111;
+
+    }
+    nav ul {
+        padding: 5px;
+        text-decoration: none;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li
+    {
+        margin-top: 10px;
+    }
+    nav ul li a{
+        margin: 5px;
+        background-color: chartreuse;
+        text-decoration: none;
     }
 
     img {
@@ -83,50 +167,12 @@ header h1 {
         left: 10px;
     }
     input {
-        /* display: none; */
+        display: none;
     }
-    input:checked~ {
-        height: 100px;
-        width: 50px;
-        background-color: aqua;
+
+    input:checked ~ nav ul {
+        transition: 0.5s;
+        left: 0px;
+        top: 120px;
     }
-}   
-    /* nav {
-        margin: 0;
-        padding: 15px;
-        margin: 0;
-    }
-    
-    nav ul {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    nav ul li {
-        
-    
-    }
-    
-    nav li a {
-        margin: 0;
-        text-decoration: none;
-        padding-top: 15px;
-        padding-bottom: 15px ;
-        padding-left: 40px;
-        padding-right: 40px; 
-        color: whitesmoke;
-        transition: 0.2s;
-    
-    }
-    
-    nav li a:hover {
-        background-color: orangered;
-        
-    
-    }
-} */
+}    */
