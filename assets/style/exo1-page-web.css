@@ -1,33 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:&display=swap');
+
+html {
+    font-family: roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
 body {
     background-color: whitesmoke;
     width: 100vw;
     margin: 0;
     padding: 0;
-
+    height: 100vh;
+    
 }
 
-header {
+article div {
+    padding: 1%;
+}
+
+.burgerMenu div {
     width: 100vw;
-    text-transform: uppercase;
-    text-align: center;
+    height: 45px;
+    background-color: #111111;
+}
+
+.burgerMenu img {
     margin: 0;
     padding: 0;
+    width: 40px;
+    
+}
+
+.burgerMenu h3 {
+    position: fixed;
+    top: -10px;
+    left: 45px;
     color: whitesmoke;
-    background-color: #111111;
-    z-index: 10;
-
-
+    height: 45px;
 }
 
-header h1 {
-    font-size: 40px;
-    padding: 20px;
+aside {
+    display: none;
+}
+
+footer {
     background-color: #111111;
-    margin: 0;
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h3 {
+    color: whitesmoke;
+    text-align: end;
+    margin-right: 10px;
 }
 
 
-@media (min-width:680px) {
+@media (min-width:800px) {
+    
     .burgerMenu {
         display: none;
     }
@@ -36,6 +68,7 @@ header h1 {
         margin: 0;
         padding: 15px;
         margin: 0;
+        border: 1px solid whitesmoke;
     }
     
     .desktopMenu ul {
@@ -53,6 +86,7 @@ header h1 {
     .desktopMenu li a {
         margin: 0;
         text-decoration: none;
+        font-weight: 600;
         padding-top: 15px;
         padding-bottom: 15px ;
         padding-left: 50px;
@@ -64,56 +98,74 @@ header h1 {
     
     nav li a:hover {
         background-color: orangered;
+        color: #111111;
 
     }
-}
 
-@media (max-width:680px) {
-    
-    header h1 {
-        font-size: 32px;
-    }
-
-    .desktopMenu {
-        display: none;
-    } 
-
-    .burgerMenu img {
+    header {
+        width: 100vw;
+        text-transform: uppercase;
+        text-align: center;
         margin: 0;
         padding: 0;
-        width: 10%;
+        color: orangered;
+        background-color: #111111;
+        font-weight: 900;
+ 
+    }
+    
+    header h1 {
+        font-size: 50px;
+        padding: 20px;
+        background-color: #111111;
+        margin: 0;
     }
 }
 
+@media (min-width:640px) {
+
+    main {
+        width: 100%;
+    }
+    article{
+        text-align: center;
+    }
+
+    article div{
+        text-align: justify;
+        width: 25%;
+        height: 100;
+        display: inline-block;
+        overflow: visible;
+        margin: 0;
+        height: 100%;
+        padding: 3%;
+    }
+}
+
+
+
 @media (max-width:800px) {
+
     header {
         display: none;
     }
-    
-    .burgerMenu {
-        width: 100vw;
-        height: 45px;
-        background-color: #111111;
+    article div {
+        padding-left: 1%;
+        padding-right: 1%;
     }
 }
 
 
-    footer {
-        background-color: #111111;
-        width: 100vw;
-        height: 60px;
-        position: absolute;
-        bottom: 0;
-    }
-
-    footer h3 {
-        color: whitesmoke;
-        text-align: end;
-        margin-right: 10px;
-    }
-
 @media screen {
+
     footer {
         display: none;
+    }
+}
+
+@media (max-width:275px) {
+    .burgerMenu div h3 {
+        font-size: 99%;
     }
 }

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    font-family: Oswald,'Courier New', Courier, monospace ;
+    background-color: whitesmoke;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(1, 1, 158);
+    margin: 0;
+    padding: 6px;
+    width: 100%;
+    color: whitesmoke;
+    height: 90px;
+    margin-bottom: 0;
+}
+
+header img {
+    width: 100px;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    color: whitesmoke;
+    word-spacing:5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    height: 50px;
+    text-shadow:  1px 1px 1px rgb(1, 1, 158);
+}
+
+#logo {
+    position: absolute;
+    top: -15px;
+}
+
+header div h1 strong {
+    color: rgb(234, 191, 3);
+}
+
+@media (max-width:200px) {
+    header h1 {
+        margin-left: 0px;
+    }
+}
+
+#backMenu {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 1, 158);
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    border-top: 1px solid whitesmoke;
+}
+
+header div a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+header div a:hover {
+    text-decoration: none;
+    color: rgb(234, 191, 3);
+    margin-left: 5px;
+}
+
+main {
+    margin-top: 25px ;
+}
+
+#city h2 {
+    font-size:28px;
+    margin: 0;
+}
+
+#actualDay {
+    font-size: small;
+}
+
