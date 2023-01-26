@@ -1,0 +1,11 @@
+main {
+    display: inline-block;
+}
+
+main div {
+    display: inline-block;
+}
+
+hr {
+    display: none;
+}
