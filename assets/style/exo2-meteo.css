@@ -208,7 +208,7 @@ footer div a:hover {
 
 /* #################### SMARTWATCH ###################### */
 
-@media (max-width:160px) {
+@media screen and (max-width:160px) {
     div #MainDetail {
         display: none;
     }
@@ -223,13 +223,13 @@ footer div a:hover {
     }
 }
 
-@media (max-width:200px) {
+@media screen and (max-width:200px) {
     header h1 {
         margin-left: 0px;
     }
 }
 
-@media (max-width:280px) {
+@media screen and (max-width:280px) {
     section img {
         display: none;
     }
@@ -251,7 +251,7 @@ footer div a:hover {
     }
 }
 
-@media (max-width:340px) {
+@media screen and (max-width:340px) {
     .icon img {
         display: none;
     }
@@ -264,7 +264,7 @@ footer div a:hover {
 /* #################### TABLETTE ###################### */
 
 
-@media (min-width:800px) {
+@media screen and (min-width:800px) {
     #MainDetail {
         right: 1%;
         padding: 0;
@@ -302,7 +302,7 @@ footer div a:hover {
 /* #################### DESKTOP ###################### */
 
 
-@media (min-width:1200px) {
+@media screen and (min-width:1200px) {
     #cityToday {
         text-align: left;
         margin-left: 1%;

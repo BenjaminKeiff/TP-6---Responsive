@@ -1,11 +1,131 @@
-main {
-    display: inline-block;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:&display=swap');
+
+html {
+    font-family: roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
 }
 
-main div {
-    display: inline-block;
+/* ######################################################
+################### MOBILE FIRST #####################
+###################################################### */
+
+body {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-hr {
-    display: none;
+/* ######################################################
+###################### HEADER ########################
+###################################################### */
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+header div {
+    color: #111111;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+header img:hover {
+    opacity: 0.8;
+    animation: robot 0.5s linear ;
+}
+
+@keyframes robot {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111111;
+}
+
+nav ul li:last-child {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+nav ul li a {
+    list-style: none;
+    border: 1px solid black;
+    border-radius:25px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(255, 217, 1);
+}
+
+section div p {
+    text-align: justify;
+}
+
+.article {
+    border:1px solid black;
+    background-color: rgb(182, 182, 182);
+    border-radius: 25px;
+    margin: 50px;
+}
+
+.article img {
+    width: 150px;
+    border-radius: 25px 0px 25px 0px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.article p {
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 900px) {
+    .espaceur{
+        height: 25px;
+    }
+}
+footer {
+    margin-right: 20px;
+}
+
+footer div {
+    text-align: right;
+    margin-right: 15px;
+    background-color: #111111;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.575);
+}
+
+footer a:hover {
+    color: rgba(245, 245, 245, 0.308);
 }
