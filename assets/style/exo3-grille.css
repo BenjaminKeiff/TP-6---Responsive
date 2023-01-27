@@ -110,7 +110,24 @@ section div p {
     .espaceur{
         height: 25px;
     }
+
 }
+
+@media screen and (min-width: 900px) {
+    .espaceur {
+        display: none;
+    }
+
+    .espaceurMD {
+        height: 25px;
+        display: block;
+    }
+
+    .MD {
+        float: left;
+    }
+}
+
 footer {
     margin-right: 20px;
 }
