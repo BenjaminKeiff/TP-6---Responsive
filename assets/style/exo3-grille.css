@@ -87,48 +87,51 @@ section div p {
 }
 
 #burgerMenu {
-    padding: 0;
-    margin: 0;
-    height: 261px;
-    width: 200px;
-    text-align: end;
     position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: #111111 ;
-}
-
-#burgerMenu ul{
-    list-style: none;
     padding:0;
     margin:0;
     text-align: center;
-}
+    width: 125px;
+    top: -12.5px;
+    right: 0;
+  }
 
-#burgerMenu li{
-    padding: 25px;
-}
+  #burgerMenu img {
+    width: 50px;
+  }
 
-#burgerMenu li a{
+  #burgerMenu ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+  }
+  #burgerMenu li {
+     background-color:#111111; 
+  }
+
+  #burgerMenu li li {
+     max-height:0;
+     overflow: hidden;
+     transition: all .5s;
+     background: #111111b0;
+     margin:0
+  }
+  #burgerMenu a {
+    display:block;
     text-decoration: none;
     color: whitesmoke;
-}
+    padding: 7px;
+  }
 
-#burgerMenu li a:hover{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    background-color: aqua;
-}
+  #burgerMenu li li:hover {
+     background: rgba(255, 217, 1, 0.787);
+  }
+  
+  #burgerMenu li:hover li {
+    max-height: 50px;
+  }
 
-#burgerMenu img {
-    width: 50px;
-    top: 0px;
-    right: 0px;
-    background-color: #111111;
-}
 
 .article {
     border:1px solid black;
@@ -153,11 +156,17 @@ section div p {
 @media screen and (max-width: 900px) {
     .espaceur{
         height: 25px;
+        z-index: 1;
     }
     h1 {
         background-color: #111111;
         padding: 10px;
         color: whitesmoke;
+        z-index: 5;
+    }
+
+    #desktopMenu{
+        display: none;
     }
 
 }
@@ -179,6 +188,7 @@ section div p {
     #burgerMenu {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 1200px) { 
@@ -214,5 +224,5 @@ footer a {
 }
 
 footer a:hover {
-    color: rgba(245, 245, 245, 0.308);
+    color:  rgba(255, 217, 1, 0.573);
 }
