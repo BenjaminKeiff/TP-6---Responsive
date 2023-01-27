@@ -128,6 +128,19 @@ section div p {
     }
 }
 
+@media screen and (min-width: 1200px) { 
+    .espaceur {
+        display: block;
+    }
+
+    .espaceurMD {
+        display: block;
+    }
+    .espaceurLG {
+        height: 25px;
+    }
+}
+
 footer {
     margin-right: 20px;
 }
