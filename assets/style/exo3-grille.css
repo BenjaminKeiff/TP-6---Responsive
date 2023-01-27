@@ -67,13 +67,13 @@ header img:hover {
 }
 
 #desktopMenu ul li:last-child {
-    border: 1px solid black;
+    border: 1px solid #111111;
     padding: 3px;
 }
 
 #desktopMenu ul li a {
     list-style: none;
-    border: 1px solid black;
+    border: 1px solid #111111;
     border-radius:25px;
     text-decoration: none;
 }
@@ -108,13 +108,15 @@ section div p {
   }
   #burgerMenu li {
      background-color:#111111; 
+     list-style: none;
+
   }
 
   #burgerMenu li li {
      max-height:0;
      overflow: hidden;
      transition: all .5s;
-     background: #111111b0;
+     background: #111111;
      margin:0
   }
   #burgerMenu a {
@@ -134,7 +136,7 @@ section div p {
 
 
 .article {
-    border:1px solid black;
+    border:1px solid #111111;
     background-color: rgb(182, 182, 182);
     border-radius: 25px;
     margin: 50px;
@@ -225,4 +227,13 @@ footer a {
 
 footer a:hover {
     color:  rgba(255, 217, 1, 0.573);
+}
+
+@media screen and (max-width: 700px) { 
+    header img{
+        display: none;
+    }
+    .nospace {
+        display: none;
+    }
 }
